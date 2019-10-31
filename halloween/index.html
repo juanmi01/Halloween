@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Halloween Party</title>
+    <link href="https://fonts.googleapis.com/css?family=Butcherman&display=swap" rel="stylesheet">
+    <!--This is a document is NOT RESPONSIVE only can be seen in a PC monitor-->
+    <link  href="estilos/Halloween.css"rel="stylesheet">
+    <script type="text/js" src="javascript/funciones.js"></script>
+    
+</head>
+<body>
+        <audio id = "voz">
+             <source src="sonidos/Iwillkillyou.mp3" type="audio/mpeg">
+              </audio>
+        
+    <div id = "wrapper">
+        <h1>Scary Halloween Party</h1>
+        <h2>Come and have fun</h2>
+        <h3>Don't forget to notify your friends</h3>
+        
+        <div id="calabaza" onclick= "mostrar('zombie');sonar('Iwillkillyou')"></div><!--Rectángulo para definir un area variable-->
+        <img id="zombie" src="imagenes/zombie.gif" ondblclick="ocultar('zombie');pausar('voz');">
+    </div>
+</body>
+</html>
